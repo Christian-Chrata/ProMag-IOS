@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateProjectController" customModule="ProMag" customModuleProvider="target">
+            <connections>
+                <outlet property="assignField" destination="tqc-MR-RUC" id="IQt-xi-Qw0"/>
+                <outlet property="descField" destination="3PK-p2-qaz" id="a6I-pp-wBn"/>
+                <outlet property="dueField" destination="IcQ-rI-G4v" id="SUQ-7Z-nEK"/>
+                <outlet property="scrollView" destination="ePB-tu-lSB" id="dn1-II-m2c"/>
+                <outlet property="submitButton" destination="rUD-e1-WUE" id="MaQ-i4-NC8"/>
+                <outlet property="titleField" destination="oVm-GM-Obq" id="ros-E4-2CD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="ePB-tu-lSB">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YU-zL-rGy">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-kQ-nxE">
+                                    <rect key="frame" x="24" y="16" width="272" height="248"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="8Rt-5B-OVj">
+                                            <rect key="frame" x="0.0" y="0.0" width="272" height="248"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="H7X-me-GWW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="272" height="248"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oVm-GM-Obq" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="V71-mS-FcF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3PK-p2-qaz" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="66" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Fn4-ry-jco"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tqc-MR-RUC" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="132" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="uGF-jA-XwE"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-rI-G4v" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="198" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="DTf-RH-jgq"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUD-e1-WUE" customClass="Button" customModule="Common">
+                                    <rect key="frame" x="16" y="502" width="288" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="DWA-ax-Ay4"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="SUBMIT"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="round">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="rUD-e1-WUE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="QDp-kQ-nxE" secondAttribute="bottom" constant="40" id="2Kh-QS-WZi"/>
+                                <constraint firstAttribute="trailing" secondItem="rUD-e1-WUE" secondAttribute="trailing" constant="16" id="8Bm-F9-XKL"/>
+                                <constraint firstAttribute="trailing" secondItem="QDp-kQ-nxE" secondAttribute="trailing" constant="24" id="8Xf-fx-U8Y"/>
+                                <constraint firstItem="rUD-e1-WUE" firstAttribute="leading" secondItem="9YU-zL-rGy" secondAttribute="leading" constant="16" id="8yU-xe-990"/>
+                                <constraint firstItem="QDp-kQ-nxE" firstAttribute="top" secondItem="9YU-zL-rGy" secondAttribute="top" constant="16" id="GO3-qi-nF4"/>
+                                <constraint firstAttribute="bottom" secondItem="rUD-e1-WUE" secondAttribute="bottom" constant="16" id="QJy-nk-CWM"/>
+                                <constraint firstItem="QDp-kQ-nxE" firstAttribute="leading" secondItem="9YU-zL-rGy" secondAttribute="leading" constant="24" id="qrW-iG-Mla"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9YU-zL-rGy" secondAttribute="bottom" id="ArX-m9-RaO"/>
+                        <constraint firstAttribute="trailing" secondItem="9YU-zL-rGy" secondAttribute="trailing" id="KUo-zp-fJg"/>
+                        <constraint firstItem="9YU-zL-rGy" firstAttribute="leading" secondItem="ePB-tu-lSB" secondAttribute="leading" id="cTF-Sp-TKO"/>
+                        <constraint firstItem="9YU-zL-rGy" firstAttribute="top" secondItem="ePB-tu-lSB" secondAttribute="top" id="dmP-Jc-HmG"/>
+                        <constraint firstItem="9YU-zL-rGy" firstAttribute="width" secondItem="ePB-tu-lSB" secondAttribute="width" id="xa0-1V-ARl"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ePB-tu-lSB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="4ed-we-3jW"/>
+                <constraint firstItem="9YU-zL-rGy" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="R7n-Ix-4Kn"/>
+                <constraint firstItem="ePB-tu-lSB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="bx7-bB-1co"/>
+                <constraint firstItem="ePB-tu-lSB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="hO4-X6-Dew"/>
+                <constraint firstItem="ePB-tu-lSB" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ijy-FJ-xkO"/>
+            </constraints>
+            <point key="canvasLocation" x="36" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="rUD-e1-WUE">
+            <size key="intrinsicContentSize" width="56" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

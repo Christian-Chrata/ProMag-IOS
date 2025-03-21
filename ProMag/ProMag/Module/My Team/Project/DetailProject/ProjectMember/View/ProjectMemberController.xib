@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProjectMemberController" customModule="ProMag" customModuleProvider="target">
+            <connections>
+                <outlet property="addButton" destination="BeH-VF-X50" id="FPJ-AZ-sFv"/>
+                <outlet property="searchText" destination="jnH-j3-5T8" id="bUQ-zR-Sgl"/>
+                <outlet property="tableView" destination="aza-so-8hp" id="YdU-Js-TYT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uvW-x6-jtE">
+                    <rect key="frame" x="16" y="36" width="288" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jnH-j3-5T8" customClass="TextField" customModule="Common">
+                            <rect key="frame" x="0.0" y="0.0" width="230" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="p27-RN-faX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EDr-fg-fZE" customClass="RoundedView" customModule="Common">
+                            <rect key="frame" x="238" y="0.0" width="50" height="50"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye1-8u-kej">
+                                    <rect key="frame" x="15" y="6" width="20" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                    <color key="textColor" name="whiteBackground"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeH-VF-X50">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="primary"/>
+                            <constraints>
+                                <constraint firstItem="ye1-8u-kej" firstAttribute="centerY" secondItem="EDr-fg-fZE" secondAttribute="centerY" id="Bux-l1-Amb"/>
+                                <constraint firstAttribute="bottom" secondItem="BeH-VF-X50" secondAttribute="bottom" id="GqN-ra-AgY"/>
+                                <constraint firstAttribute="trailing" secondItem="BeH-VF-X50" secondAttribute="trailing" id="H6g-LG-xc8"/>
+                                <constraint firstItem="BeH-VF-X50" firstAttribute="leading" secondItem="EDr-fg-fZE" secondAttribute="leading" id="LVP-FU-SDY"/>
+                                <constraint firstItem="ye1-8u-kej" firstAttribute="centerX" secondItem="EDr-fg-fZE" secondAttribute="centerX" id="X4K-Qf-fBV"/>
+                                <constraint firstAttribute="width" constant="50" id="bjJ-JT-Shl"/>
+                                <constraint firstItem="BeH-VF-X50" firstAttribute="top" secondItem="EDr-fg-fZE" secondAttribute="top" id="zwC-Rg-8no"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="topRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="8"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="mFo-4i-eo2"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aza-so-8hp">
+                    <rect key="frame" x="16" y="86" width="288" height="482"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="grayBackground"/>
+            <constraints>
+                <constraint firstItem="aza-so-8hp" firstAttribute="top" secondItem="uvW-x6-jtE" secondAttribute="bottom" id="6w1-CP-mR2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aza-so-8hp" secondAttribute="trailing" constant="16" id="Oiw-F3-aGT"/>
+                <constraint firstItem="uvW-x6-jtE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ePL-cy-e9n"/>
+                <constraint firstItem="uvW-x6-jtE" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="he4-F3-OaQ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uvW-x6-jtE" secondAttribute="trailing" constant="16" id="nYH-Y9-ItY"/>
+                <constraint firstItem="aza-so-8hp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="nbz-zx-g2K"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="aza-so-8hp" secondAttribute="bottom" id="zFp-2B-7yU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="36" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="grayBackground">
+            <color red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.3411764705882353" green="0.60784313725490191" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteBackground">
+            <color red="0.99607843137254903" green="0.99607843137254903" blue="0.99607843137254903" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

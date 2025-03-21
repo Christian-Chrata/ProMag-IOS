@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreateSubtaskController" customModule="ProMag" customModuleProvider="target">
+            <connections>
+                <outlet property="assignField" destination="pe3-82-L3o" id="QDN-yv-SaQ"/>
+                <outlet property="descriptionField" destination="2mh-yV-D8r" id="l4V-N5-QkL"/>
+                <outlet property="dueField" destination="b5s-WP-yMq" id="JAL-sR-EkU"/>
+                <outlet property="scrollView" destination="EFn-Xf-MLF" id="X3t-4n-m6n"/>
+                <outlet property="submitButton" destination="Mhj-kg-lrW" id="oSl-pP-gjz"/>
+                <outlet property="titleField" destination="DAg-i6-vVl" id="rwK-rT-nHr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="EFn-Xf-MLF">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehk-1s-yjd">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="7u5-N0-nl3">
+                                    <rect key="frame" x="24" y="16" width="345" height="248"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZuV-fA-AUd">
+                                            <rect key="frame" x="0.0" y="0.0" width="345" height="248"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="yIl-nu-Q4T">
+                                                    <rect key="frame" x="0.0" y="0.0" width="345" height="248"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAg-i6-vVl" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="0.0" width="345" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="ebO-1Y-vPF"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mh-yV-D8r" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="66" width="345" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Nmo-Fn-H7u"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pe3-82-L3o" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="132" width="345" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Eqz-UV-c23"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b5s-WP-yMq" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="198" width="345" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="aQi-Uc-Ncb"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mhj-kg-lrW" customClass="Button" customModule="Common">
+                                    <rect key="frame" x="16" y="693" width="361" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="uOl-yH-B9B"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="SUBMIT"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="round">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Mhj-kg-lrW" secondAttribute="trailing" constant="16" id="GcT-gt-0og"/>
+                                <constraint firstAttribute="bottom" secondItem="Mhj-kg-lrW" secondAttribute="bottom" constant="16" id="H2M-Zg-R8L"/>
+                                <constraint firstItem="Mhj-kg-lrW" firstAttribute="leading" secondItem="ehk-1s-yjd" secondAttribute="leading" constant="16" id="VSJ-Da-MNJ"/>
+                                <constraint firstItem="7u5-N0-nl3" firstAttribute="top" secondItem="ehk-1s-yjd" secondAttribute="top" constant="16" id="bVT-wf-Edu"/>
+                                <constraint firstAttribute="trailing" secondItem="7u5-N0-nl3" secondAttribute="trailing" constant="24" id="hbH-OQ-Dk5"/>
+                                <constraint firstItem="Mhj-kg-lrW" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7u5-N0-nl3" secondAttribute="bottom" constant="40" id="pDF-7u-4xU"/>
+                                <constraint firstItem="7u5-N0-nl3" firstAttribute="leading" secondItem="ehk-1s-yjd" secondAttribute="leading" constant="24" id="wAt-ow-ycD"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ehk-1s-yjd" firstAttribute="top" secondItem="EFn-Xf-MLF" secondAttribute="top" id="YZH-qy-EDZ"/>
+                        <constraint firstItem="ehk-1s-yjd" firstAttribute="leading" secondItem="EFn-Xf-MLF" secondAttribute="leading" id="asR-Ug-qqr"/>
+                        <constraint firstAttribute="trailing" secondItem="ehk-1s-yjd" secondAttribute="trailing" id="evq-Ha-bYf"/>
+                        <constraint firstAttribute="bottom" secondItem="ehk-1s-yjd" secondAttribute="bottom" id="lk2-RX-Hqd"/>
+                        <constraint firstItem="ehk-1s-yjd" firstAttribute="width" secondItem="EFn-Xf-MLF" secondAttribute="width" id="shb-k2-3Do"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="EFn-Xf-MLF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3dZ-xd-srl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EFn-Xf-MLF" secondAttribute="trailing" id="LGW-QC-1NV"/>
+                <constraint firstItem="EFn-Xf-MLF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Q5I-0L-TP7"/>
+                <constraint firstItem="ehk-1s-yjd" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="ahr-UB-0jT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="EFn-Xf-MLF" secondAttribute="bottom" id="n9B-2L-M2n"/>
+            </constraints>
+            <point key="canvasLocation" x="-100" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Mhj-kg-lrW">
+            <size key="intrinsicContentSize" width="56" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

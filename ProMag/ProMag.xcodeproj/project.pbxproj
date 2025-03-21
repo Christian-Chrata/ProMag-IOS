@@ -1,0 +1,1628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A77EEC0C973E629ACC7D4B91 /* Pods_ProMag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB573713AC83B07CC6B22D4 /* Pods_ProMag.framework */; };
+		CE0ADF212968654E00672612 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADF1F2968654E00672612 /* RegisterController.swift */; };
+		CE0ADF222968654E00672612 /* RegisterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0ADF202968654E00672612 /* RegisterController.xib */; };
+		CE0ADF35296AF75D00672612 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0ADF34296AF75D00672612 /* Assets.xcassets */; };
+		CE0ADF3A296AFAEC00672612 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0ADF39296AFAEC00672612 /* LoginViewModel.swift */; };
+		CE0EFBA829EE686600819C57 /* MyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBA729EE686600819C57 /* MyProfileViewModel.swift */; };
+		CE0EFBB229F2738000819C57 /* TeamListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBB029F2738000819C57 /* TeamListCell.swift */; };
+		CE0EFBB329F2738000819C57 /* TeamListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EFBB129F2738000819C57 /* TeamListCell.xib */; };
+		CE0EFBB529F2B42200819C57 /* MyProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBB429F2B42200819C57 /* MyProfileModel.swift */; };
+		CE0EFBBC29F3C48200819C57 /* ProfileTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBBA29F3C48200819C57 /* ProfileTeamController.swift */; };
+		CE0EFBBD29F3C48200819C57 /* ProfileTeamController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EFBBB29F3C48200819C57 /* ProfileTeamController.xib */; };
+		CE0EFBBF29F4DD2D00819C57 /* ProfileTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBBE29F4DD2D00819C57 /* ProfileTeamViewModel.swift */; };
+		CE0EFBC129F5276400819C57 /* ProfileTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBC029F5276400819C57 /* ProfileTeamModel.swift */; };
+		CE0EFBC729FA8BB700819C57 /* EditProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBC529FA8BB700819C57 /* EditProfileController.swift */; };
+		CE0EFBC829FA8BB700819C57 /* EditProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0EFBC629FA8BB700819C57 /* EditProfileController.xib */; };
+		CE0EFBCA29FA9EFD00819C57 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0EFBC929FA9EFD00819C57 /* EditProfileViewModel.swift */; };
+		CE196D722965C69C00E14B39 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE196D702965C69C00E14B39 /* LoginController.swift */; };
+		CE196D732965C69C00E14B39 /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE196D712965C69C00E14B39 /* LoginController.xib */; };
+		CE196D842967070C00E14B39 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE196D832967070C00E14B39 /* RegisterViewModel.swift */; };
+		CE196D862967071A00E14B39 /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE196D852967071A00E14B39 /* RegisterModel.swift */; };
+		CE1BC1EC2984D6BB0048D7A3 /* MyTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC1EA2984D6BB0048D7A3 /* MyTaskController.swift */; };
+		CE1BC1ED2984D6BB0048D7A3 /* MyTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC1EB2984D6BB0048D7A3 /* MyTaskController.xib */; };
+		CE1BC1F02984D6CA0048D7A3 /* MyTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC1EE2984D6CA0048D7A3 /* MyTeamController.swift */; };
+		CE1BC1F12984D6CA0048D7A3 /* MyTeamController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC1EF2984D6CA0048D7A3 /* MyTeamController.xib */; };
+		CE1BC1FA2984D7010048D7A3 /* MyProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC1F82984D7010048D7A3 /* MyProfileController.swift */; };
+		CE1BC1FB2984D7010048D7A3 /* MyProfileController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC1F92984D7010048D7A3 /* MyProfileController.xib */; };
+		CE1BC1FE2984D71A0048D7A3 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC1FD2984D71A0048D7A3 /* MainController.swift */; };
+		CE1BC2052986337C0048D7A3 /* ForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC2032986337C0048D7A3 /* ForgetPasswordController.swift */; };
+		CE1BC2062986337C0048D7A3 /* ForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1BC2042986337C0048D7A3 /* ForgetPasswordController.xib */; };
+		CE1BC208298669F30048D7A3 /* ForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1BC207298669F30048D7A3 /* ForgetPasswordViewModel.swift */; };
+		CE3334522A31B3EA008FF0FD /* CreateSubtaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3334502A31B3EA008FF0FD /* CreateSubtaskController.swift */; };
+		CE3334532A31B3EA008FF0FD /* CreateSubtaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE3334512A31B3EA008FF0FD /* CreateSubtaskController.xib */; };
+		CE3334552A31B3F9008FF0FD /* CreateSubtaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3334542A31B3F9008FF0FD /* CreateSubtaskViewModel.swift */; };
+		CE3334572A31B405008FF0FD /* CreateSubtaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3334562A31B405008FF0FD /* CreateSubtaskModel.swift */; };
+		CE36892B29DB01CE00BF46CD /* ConfirmForgetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE36892929DB01CE00BF46CD /* ConfirmForgetPasswordController.swift */; };
+		CE36892C29DB01CE00BF46CD /* ConfirmForgetPasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE36892A29DB01CE00BF46CD /* ConfirmForgetPasswordController.xib */; };
+		CE5E92CE29E97C5900DBF49E /* ConfirmForgetPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5E92CD29E97C5900DBF49E /* ConfirmForgetPasswordViewModel.swift */; };
+		CE714AD22A2DA05900A452F1 /* CreateTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AD02A2DA05900A452F1 /* CreateTaskController.swift */; };
+		CE714AD32A2DA05900A452F1 /* CreateTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE714AD12A2DA05900A452F1 /* CreateTaskController.xib */; };
+		CE714AD52A2DA06100A452F1 /* CreateTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AD42A2DA06100A452F1 /* CreateTaskViewModel.swift */; };
+		CE714AD72A2DA07100A452F1 /* CreateTaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AD62A2DA07100A452F1 /* CreateTaskModel.swift */; };
+		CE714AE32A2DD24300A452F1 /* DetailTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AE12A2DD24300A452F1 /* DetailTaskController.swift */; };
+		CE714AE42A2DD24300A452F1 /* DetailTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE714AE22A2DD24300A452F1 /* DetailTaskController.xib */; };
+		CE714AE62A2DF33100A452F1 /* DetailTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AE52A2DF33100A452F1 /* DetailTaskViewModel.swift */; };
+		CE714AE82A2E367B00A452F1 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AE72A2E367B00A452F1 /* CommentModel.swift */; };
+		CE714AED2A2E380E00A452F1 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AEB2A2E380E00A452F1 /* CommentCell.swift */; };
+		CE714AEE2A2E380E00A452F1 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE714AEC2A2E380E00A452F1 /* CommentCell.xib */; };
+		CE714AF22A2E51F200A452F1 /* SubtaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE714AF02A2E51F200A452F1 /* SubtaskCell.swift */; };
+		CE714AF32A2E51F200A452F1 /* SubtaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE714AF12A2E51F200A452F1 /* SubtaskCell.xib */; };
+		CE727AC129FCF22900D5373A /* ManageAccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727ABF29FCF22900D5373A /* ManageAccountController.swift */; };
+		CE727AC229FCF22900D5373A /* ManageAccountController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE727AC029FCF22900D5373A /* ManageAccountController.xib */; };
+		CE727AC529FE660200D5373A /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727AC329FE660200D5373A /* ChangePasswordController.swift */; };
+		CE727AC629FE660200D5373A /* ChangePasswordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE727AC429FE660200D5373A /* ChangePasswordController.xib */; };
+		CE727AC829FE6B3D00D5373A /* ManageAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727AC729FE6B3D00D5373A /* ManageAccountViewModel.swift */; };
+		CE727ACA2A00C02200D5373A /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727AC92A00C02200D5373A /* ChangePasswordViewModel.swift */; };
+		CE727ACC2A00D6EA00D5373A /* ChangeEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727ACB2A00D6EA00D5373A /* ChangeEmailViewModel.swift */; };
+		CE727ACF2A00D73700D5373A /* ChangeEmailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727ACD2A00D73700D5373A /* ChangeEmailController.swift */; };
+		CE727AD02A00D73700D5373A /* ChangeEmailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE727ACE2A00D73700D5373A /* ChangeEmailController.xib */; };
+		CE727ADF2A04E04800D5373A /* MyTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727ADE2A04E04800D5373A /* MyTeamViewModel.swift */; };
+		CE727AE22A08B66A00D5373A /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727AE02A08B66A00D5373A /* ProjectCell.swift */; };
+		CE727AE32A08B66A00D5373A /* ProjectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE727AE12A08B66A00D5373A /* ProjectCell.xib */; };
+		CE727AE52A08B9AA00D5373A /* ProjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE727AE42A08B9AA00D5373A /* ProjectModel.swift */; };
+		CE7BFD0B294DE0D90049B3CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7BFD0A294DE0D90049B3CD /* AppDelegate.swift */; };
+		CE7BFD15294DE0D90049B3CD /* ProMag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CE7BFD13294DE0D90049B3CD /* ProMag.xcdatamodeld */; };
+		CE7BFD17294DE0DA0049B3CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE7BFD16294DE0DA0049B3CD /* Assets.xcassets */; };
+		CE7BFD1A294DE0DA0049B3CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE7BFD18294DE0DA0049B3CD /* LaunchScreen.storyboard */; };
+		CE840215294E2BD0007E6357 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE840214294E2BD0007E6357 /* UIViewController+Extension.swift */; };
+		CE84FECF294DF094007E6357 /* AuthManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FECE294DF094007E6357 /* AuthManager.framework */; };
+		CE84FED0294DF094007E6357 /* AuthManager.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FECE294DF094007E6357 /* AuthManager.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE84FED3294DF099007E6357 /* Common.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FED2294DF099007E6357 /* Common.framework */; };
+		CE84FED4294DF099007E6357 /* Common.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FED2294DF099007E6357 /* Common.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CE84FED6294DF0A0007E6357 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FED5294DF0A0007E6357 /* Networking.framework */; };
+		CE84FED7294DF0A1007E6357 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CE84FED5294DF0A0007E6357 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CECF018F2A1BC3190064D18B /* DetailProjectNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF018E2A1BC3190064D18B /* DetailProjectNavigationController.swift */; };
+		CECF01932A1C72D30064D18B /* TaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01912A1C72D30064D18B /* TaskCell.swift */; };
+		CECF01942A1C72D30064D18B /* TaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF01922A1C72D30064D18B /* TaskCell.xib */; };
+		CECF01962A1C76500064D18B /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01952A1C76500064D18B /* TaskModel.swift */; };
+		CECF01982A1C79130064D18B /* MyTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01972A1C79130064D18B /* MyTaskViewModel.swift */; };
+		CECF01A42A1C83080064D18B /* ProjectMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01A22A1C83080064D18B /* ProjectMemberController.swift */; };
+		CECF01A52A1C83080064D18B /* ProjectMemberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF01A32A1C83080064D18B /* ProjectMemberController.xib */; };
+		CECF01AA2A1CBE280064D18B /* ProjectDashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01A82A1CBE280064D18B /* ProjectDashboardController.swift */; };
+		CECF01AB2A1CBE280064D18B /* ProjectDashboardController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CECF01A92A1CBE280064D18B /* ProjectDashboardController.xib */; };
+		CECF01AD2A1CBE3F0064D18B /* ProjectDashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01AC2A1CBE3F0064D18B /* ProjectDashboardViewModel.swift */; };
+		CECF01AF2A1CC2220064D18B /* DashboardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01AE2A1CC2220064D18B /* DashboardModel.swift */; };
+		CECF01B12A1CD5B60064D18B /* ProjectMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01B02A1CD5B60064D18B /* ProjectMemberViewModel.swift */; };
+		CECF01B32A22084C0064D18B /* ProjectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECF01B22A22084B0064D18B /* ProjectTaskViewModel.swift */; };
+		CED7744F2A0CDC0F0047661A /* TeamMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7744D2A0CDC0F0047661A /* TeamMemberController.swift */; };
+		CED774502A0CDC0F0047661A /* TeamMemberController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7744E2A0CDC0F0047661A /* TeamMemberController.xib */; };
+		CED774532A0CDC240047661A /* TeamMemberCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774512A0CDC240047661A /* TeamMemberCell.swift */; };
+		CED774542A0CDC240047661A /* TeamMemberCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774522A0CDC240047661A /* TeamMemberCell.xib */; };
+		CED774562A0CE2770047661A /* TeamMemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774552A0CE2770047661A /* TeamMemberModel.swift */; };
+		CED774582A0CE3540047661A /* TeamMemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774572A0CE3540047661A /* TeamMemberViewModel.swift */; };
+		CED7745D2A0E2E280047661A /* MemberDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7745B2A0E2E280047661A /* MemberDetailController.swift */; };
+		CED7745E2A0E2E280047661A /* MemberDetailController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7745C2A0E2E280047661A /* MemberDetailController.xib */; };
+		CED774602A0E34CD0047661A /* MemberDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7745F2A0E34CD0047661A /* MemberDetailViewModel.swift */; };
+		CED774622A0F4F640047661A /* RolesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774612A0F4F640047661A /* RolesModel.swift */; };
+		CED774662A0F6A170047661A /* TeamInviteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774642A0F6A170047661A /* TeamInviteController.swift */; };
+		CED774672A0F6A170047661A /* TeamInviteController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774652A0F6A170047661A /* TeamInviteController.xib */; };
+		CED7746C2A0F784E0047661A /* TeamInviteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7746B2A0F784E0047661A /* TeamInviteViewModel.swift */; };
+		CED7746E2A11FBB10047661A /* TeamInviteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7746D2A11FBB10047661A /* TeamInviteModel.swift */; };
+		CED774712A1203150047661A /* TeamInviteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7746F2A1203150047661A /* TeamInviteCell.swift */; };
+		CED774722A1203150047661A /* TeamInviteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774702A1203150047661A /* TeamInviteCell.xib */; };
+		CED774782A14E6610047661A /* CreateProjectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774762A14E6610047661A /* CreateProjectController.swift */; };
+		CED774792A14E6610047661A /* CreateProjectController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774772A14E6610047661A /* CreateProjectController.xib */; };
+		CED7747D2A18C1A60047661A /* CreateProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7747C2A18C1A60047661A /* CreateProjectViewModel.swift */; };
+		CED774842A18D4FC0047661A /* SelectTeamController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774822A18D4FC0047661A /* SelectTeamController.swift */; };
+		CED774852A18D4FC0047661A /* SelectTeamController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774832A18D4FC0047661A /* SelectTeamController.xib */; };
+		CED774882A18D6540047661A /* SelectTeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774872A18D6540047661A /* SelectTeamModel.swift */; };
+		CED7748B2A18D9510047661A /* SelectTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7748A2A18D9510047661A /* SelectTeamViewModel.swift */; };
+		CED7748F2A18DB810047661A /* SingleSelectTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7748D2A18DB810047661A /* SingleSelectTeamCell.swift */; };
+		CED774902A18DB810047661A /* SingleSelectTeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED7748E2A18DB810047661A /* SingleSelectTeamCell.xib */; };
+		CED774932A18DCA10047661A /* MultipleSelectTeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774912A18DCA10047661A /* MultipleSelectTeamCell.swift */; };
+		CED774942A18DCA10047661A /* MultipleSelectTeamCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774922A18DCA10047661A /* MultipleSelectTeamCell.xib */; };
+		CED774B62A19FE990047661A /* ProjectTaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED774B42A19FE990047661A /* ProjectTaskController.swift */; };
+		CED774B72A19FE990047661A /* ProjectTaskController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CED774B52A19FE990047661A /* ProjectTaskController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE84FED1294DF094007E6357 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CE84FED0294DF094007E6357 /* AuthManager.framework in Embed Frameworks */,
+				CE84FED4294DF099007E6357 /* Common.framework in Embed Frameworks */,
+				CE84FED7294DF0A1007E6357 /* Networking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4EB573713AC83B07CC6B22D4 /* Pods_ProMag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProMag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B12A6183EDE7B65DD94A087F /* Pods-ProMag.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProMag.debug.xcconfig"; path = "Target Support Files/Pods-ProMag/Pods-ProMag.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0ADF1F2968654E00672612 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		CE0ADF202968654E00672612 /* RegisterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterController.xib; sourceTree = "<group>"; };
+		CE0ADF34296AF75D00672612 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Common/Common/sources/Assets.xcassets; sourceTree = "<group>"; };
+		CE0ADF39296AFAEC00672612 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		CE0EFBA729EE686600819C57 /* MyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileViewModel.swift; sourceTree = "<group>"; };
+		CE0EFBB029F2738000819C57 /* TeamListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListCell.swift; sourceTree = "<group>"; };
+		CE0EFBB129F2738000819C57 /* TeamListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamListCell.xib; sourceTree = "<group>"; };
+		CE0EFBB429F2B42200819C57 /* MyProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileModel.swift; sourceTree = "<group>"; };
+		CE0EFBBA29F3C48200819C57 /* ProfileTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeamController.swift; sourceTree = "<group>"; };
+		CE0EFBBB29F3C48200819C57 /* ProfileTeamController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTeamController.xib; sourceTree = "<group>"; };
+		CE0EFBBE29F4DD2D00819C57 /* ProfileTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeamViewModel.swift; sourceTree = "<group>"; };
+		CE0EFBC029F5276400819C57 /* ProfileTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTeamModel.swift; sourceTree = "<group>"; };
+		CE0EFBC529FA8BB700819C57 /* EditProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileController.swift; sourceTree = "<group>"; };
+		CE0EFBC629FA8BB700819C57 /* EditProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditProfileController.xib; sourceTree = "<group>"; };
+		CE0EFBC929FA9EFD00819C57 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		CE196D702965C69C00E14B39 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CE196D712965C69C00E14B39 /* LoginController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginController.xib; sourceTree = "<group>"; };
+		CE196D832967070C00E14B39 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		CE196D852967071A00E14B39 /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		CE1BC1EA2984D6BB0048D7A3 /* MyTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskController.swift; sourceTree = "<group>"; };
+		CE1BC1EB2984D6BB0048D7A3 /* MyTaskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTaskController.xib; sourceTree = "<group>"; };
+		CE1BC1EE2984D6CA0048D7A3 /* MyTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamController.swift; sourceTree = "<group>"; };
+		CE1BC1EF2984D6CA0048D7A3 /* MyTeamController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTeamController.xib; sourceTree = "<group>"; };
+		CE1BC1F82984D7010048D7A3 /* MyProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileController.swift; sourceTree = "<group>"; };
+		CE1BC1F92984D7010048D7A3 /* MyProfileController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyProfileController.xib; sourceTree = "<group>"; };
+		CE1BC1FD2984D71A0048D7A3 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		CE1BC2032986337C0048D7A3 /* ForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordController.swift; sourceTree = "<group>"; };
+		CE1BC2042986337C0048D7A3 /* ForgetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordController.xib; sourceTree = "<group>"; };
+		CE1BC207298669F30048D7A3 /* ForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		CE3334502A31B3EA008FF0FD /* CreateSubtaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSubtaskController.swift; sourceTree = "<group>"; };
+		CE3334512A31B3EA008FF0FD /* CreateSubtaskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateSubtaskController.xib; sourceTree = "<group>"; };
+		CE3334542A31B3F9008FF0FD /* CreateSubtaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSubtaskViewModel.swift; sourceTree = "<group>"; };
+		CE3334562A31B405008FF0FD /* CreateSubtaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateSubtaskModel.swift; sourceTree = "<group>"; };
+		CE36892929DB01CE00BF46CD /* ConfirmForgetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmForgetPasswordController.swift; sourceTree = "<group>"; };
+		CE36892A29DB01CE00BF46CD /* ConfirmForgetPasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmForgetPasswordController.xib; sourceTree = "<group>"; };
+		CE5E92CD29E97C5900DBF49E /* ConfirmForgetPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmForgetPasswordViewModel.swift; sourceTree = "<group>"; };
+		CE714AD02A2DA05900A452F1 /* CreateTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskController.swift; sourceTree = "<group>"; };
+		CE714AD12A2DA05900A452F1 /* CreateTaskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateTaskController.xib; sourceTree = "<group>"; };
+		CE714AD42A2DA06100A452F1 /* CreateTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskViewModel.swift; sourceTree = "<group>"; };
+		CE714AD62A2DA07100A452F1 /* CreateTaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskModel.swift; sourceTree = "<group>"; };
+		CE714AE12A2DD24300A452F1 /* DetailTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskController.swift; sourceTree = "<group>"; };
+		CE714AE22A2DD24300A452F1 /* DetailTaskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTaskController.xib; sourceTree = "<group>"; };
+		CE714AE52A2DF33100A452F1 /* DetailTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTaskViewModel.swift; sourceTree = "<group>"; };
+		CE714AE72A2E367B00A452F1 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		CE714AEB2A2E380E00A452F1 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		CE714AEC2A2E380E00A452F1 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		CE714AF02A2E51F200A452F1 /* SubtaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtaskCell.swift; sourceTree = "<group>"; };
+		CE714AF12A2E51F200A452F1 /* SubtaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubtaskCell.xib; sourceTree = "<group>"; };
+		CE727ABF29FCF22900D5373A /* ManageAccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountController.swift; sourceTree = "<group>"; };
+		CE727AC029FCF22900D5373A /* ManageAccountController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ManageAccountController.xib; sourceTree = "<group>"; };
+		CE727AC329FE660200D5373A /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		CE727AC429FE660200D5373A /* ChangePasswordController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePasswordController.xib; sourceTree = "<group>"; };
+		CE727AC729FE6B3D00D5373A /* ManageAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageAccountViewModel.swift; sourceTree = "<group>"; };
+		CE727AC92A00C02200D5373A /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		CE727ACB2A00D6EA00D5373A /* ChangeEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailViewModel.swift; sourceTree = "<group>"; };
+		CE727ACD2A00D73700D5373A /* ChangeEmailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeEmailController.swift; sourceTree = "<group>"; };
+		CE727ACE2A00D73700D5373A /* ChangeEmailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeEmailController.xib; sourceTree = "<group>"; };
+		CE727ADE2A04E04800D5373A /* MyTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTeamViewModel.swift; sourceTree = "<group>"; };
+		CE727AE02A08B66A00D5373A /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		CE727AE12A08B66A00D5373A /* ProjectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectCell.xib; sourceTree = "<group>"; };
+		CE727AE42A08B9AA00D5373A /* ProjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectModel.swift; sourceTree = "<group>"; };
+		CE7BFD07294DE0D90049B3CD /* ProMag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProMag.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE7BFD0A294DE0D90049B3CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE7BFD14294DE0D90049B3CD /* ProMag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProMag.xcdatamodel; sourceTree = "<group>"; };
+		CE7BFD16294DE0DA0049B3CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE7BFD19294DE0DA0049B3CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE7BFD1B294DE0DA0049B3CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE840214294E2BD0007E6357 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		CE84FECE294DF094007E6357 /* AuthManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AuthManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE84FED2294DF099007E6357 /* Common.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Common.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE84FED5294DF0A0007E6357 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CECF018E2A1BC3190064D18B /* DetailProjectNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProjectNavigationController.swift; sourceTree = "<group>"; };
+		CECF01912A1C72D30064D18B /* TaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCell.swift; sourceTree = "<group>"; };
+		CECF01922A1C72D30064D18B /* TaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskCell.xib; sourceTree = "<group>"; };
+		CECF01952A1C76500064D18B /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		CECF01972A1C79130064D18B /* MyTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTaskViewModel.swift; sourceTree = "<group>"; };
+		CECF01A22A1C83080064D18B /* ProjectMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMemberController.swift; sourceTree = "<group>"; };
+		CECF01A32A1C83080064D18B /* ProjectMemberController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectMemberController.xib; sourceTree = "<group>"; };
+		CECF01A82A1CBE280064D18B /* ProjectDashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDashboardController.swift; sourceTree = "<group>"; };
+		CECF01A92A1CBE280064D18B /* ProjectDashboardController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectDashboardController.xib; sourceTree = "<group>"; };
+		CECF01AC2A1CBE3F0064D18B /* ProjectDashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDashboardViewModel.swift; sourceTree = "<group>"; };
+		CECF01AE2A1CC2220064D18B /* DashboardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardModel.swift; sourceTree = "<group>"; };
+		CECF01B02A1CD5B60064D18B /* ProjectMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectMemberViewModel.swift; sourceTree = "<group>"; };
+		CECF01B22A22084B0064D18B /* ProjectTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTaskViewModel.swift; sourceTree = "<group>"; };
+		CED7744D2A0CDC0F0047661A /* TeamMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberController.swift; sourceTree = "<group>"; };
+		CED7744E2A0CDC0F0047661A /* TeamMemberController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamMemberController.xib; sourceTree = "<group>"; };
+		CED774512A0CDC240047661A /* TeamMemberCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberCell.swift; sourceTree = "<group>"; };
+		CED774522A0CDC240047661A /* TeamMemberCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamMemberCell.xib; sourceTree = "<group>"; };
+		CED774552A0CE2770047661A /* TeamMemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberModel.swift; sourceTree = "<group>"; };
+		CED774572A0CE3540047661A /* TeamMemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamMemberViewModel.swift; sourceTree = "<group>"; };
+		CED7745B2A0E2E280047661A /* MemberDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailController.swift; sourceTree = "<group>"; };
+		CED7745C2A0E2E280047661A /* MemberDetailController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberDetailController.xib; sourceTree = "<group>"; };
+		CED7745F2A0E34CD0047661A /* MemberDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewModel.swift; sourceTree = "<group>"; };
+		CED774612A0F4F640047661A /* RolesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RolesModel.swift; sourceTree = "<group>"; };
+		CED774642A0F6A170047661A /* TeamInviteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInviteController.swift; sourceTree = "<group>"; };
+		CED774652A0F6A170047661A /* TeamInviteController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamInviteController.xib; sourceTree = "<group>"; };
+		CED7746B2A0F784E0047661A /* TeamInviteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInviteViewModel.swift; sourceTree = "<group>"; };
+		CED7746D2A11FBB10047661A /* TeamInviteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInviteModel.swift; sourceTree = "<group>"; };
+		CED7746F2A1203150047661A /* TeamInviteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamInviteCell.swift; sourceTree = "<group>"; };
+		CED774702A1203150047661A /* TeamInviteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamInviteCell.xib; sourceTree = "<group>"; };
+		CED774762A14E6610047661A /* CreateProjectController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectController.swift; sourceTree = "<group>"; };
+		CED774772A14E6610047661A /* CreateProjectController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateProjectController.xib; sourceTree = "<group>"; };
+		CED7747C2A18C1A60047661A /* CreateProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectViewModel.swift; sourceTree = "<group>"; };
+		CED774822A18D4FC0047661A /* SelectTeamController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamController.swift; sourceTree = "<group>"; };
+		CED774832A18D4FC0047661A /* SelectTeamController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectTeamController.xib; sourceTree = "<group>"; };
+		CED774872A18D6540047661A /* SelectTeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamModel.swift; sourceTree = "<group>"; };
+		CED7748A2A18D9510047661A /* SelectTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTeamViewModel.swift; sourceTree = "<group>"; };
+		CED7748D2A18DB810047661A /* SingleSelectTeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleSelectTeamCell.swift; sourceTree = "<group>"; };
+		CED7748E2A18DB810047661A /* SingleSelectTeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleSelectTeamCell.xib; sourceTree = "<group>"; };
+		CED774912A18DCA10047661A /* MultipleSelectTeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSelectTeamCell.swift; sourceTree = "<group>"; };
+		CED774922A18DCA10047661A /* MultipleSelectTeamCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MultipleSelectTeamCell.xib; sourceTree = "<group>"; };
+		CED774B42A19FE990047661A /* ProjectTaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectTaskController.swift; sourceTree = "<group>"; };
+		CED774B52A19FE990047661A /* ProjectTaskController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProjectTaskController.xib; sourceTree = "<group>"; };
+		E3EEC9F3C3D52EAF5AA33BA0 /* Pods-ProMag.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProMag.release.xcconfig"; path = "Target Support Files/Pods-ProMag/Pods-ProMag.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE7BFD04294DE0D90049B3CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE84FED6294DF0A0007E6357 /* Networking.framework in Frameworks */,
+				CE84FED3294DF099007E6357 /* Common.framework in Frameworks */,
+				CE84FECF294DF094007E6357 /* AuthManager.framework in Frameworks */,
+				A77EEC0C973E629ACC7D4B91 /* Pods_ProMag.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30C24CF325F648C018F4B570 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B12A6183EDE7B65DD94A087F /* Pods-ProMag.debug.xcconfig */,
+				E3EEC9F3C3D52EAF5AA33BA0 /* Pods-ProMag.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5882BE18FC9BEDC61B8C48B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE84FED5294DF0A0007E6357 /* Networking.framework */,
+				CE84FED2294DF099007E6357 /* Common.framework */,
+				CE84FECE294DF094007E6357 /* AuthManager.framework */,
+				4EB573713AC83B07CC6B22D4 /* Pods_ProMag.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE0ADF38296AFADC00672612 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE0ADF39296AFAEC00672612 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE0EFBAD29F25B9300819C57 /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC1E92984D6A20048D7A3 /* Model */,
+				CE1BC1E82984D69C0048D7A3 /* View Model */,
+				CE1BC1E72984D6980048D7A3 /* View */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		CE0EFBAE29F25B9E00819C57 /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBC429FA8BA000819C57 /* Model */,
+				CE0EFBC329FA8B9B00819C57 /* ViewModel */,
+				CE0EFBC229FA8B9300819C57 /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		CE0EFBAF29F2724700819C57 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBB029F2738000819C57 /* TeamListCell.swift */,
+				CE0EFBB129F2738000819C57 /* TeamListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE0EFBB629F3C45900819C57 /* ProfileTeam */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBB929F3C46900819C57 /* Model */,
+				CE0EFBB829F3C46400819C57 /* ViewModel */,
+				CE0EFBB729F3C45F00819C57 /* View */,
+			);
+			path = ProfileTeam;
+			sourceTree = "<group>";
+		};
+		CE0EFBB729F3C45F00819C57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBBA29F3C48200819C57 /* ProfileTeamController.swift */,
+				CE0EFBBB29F3C48200819C57 /* ProfileTeamController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0EFBB829F3C46400819C57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBBE29F4DD2D00819C57 /* ProfileTeamViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE0EFBB929F3C46900819C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBC029F5276400819C57 /* ProfileTeamModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE0EFBC229FA8B9300819C57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBC529FA8BB700819C57 /* EditProfileController.swift */,
+				CE0EFBC629FA8BB700819C57 /* EditProfileController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE0EFBC329FA8B9B00819C57 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBC929FA9EFD00819C57 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE0EFBC429FA8BA000819C57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE196D6E2965C63C00E14B39 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CE0ADF38296AFADC00672612 /* ViewModel */,
+				CE196D6F2965C64300E14B39 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CE196D6F2965C64300E14B39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE196D702965C69C00E14B39 /* LoginController.swift */,
+				CE196D712965C69C00E14B39 /* LoginController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE196D742966CD0A00E14B39 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CE196D81296706FA00E14B39 /* Model */,
+				CE196D822967070000E14B39 /* ViewModel */,
+				CE196D772966CD1E00E14B39 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CE196D772966CD1E00E14B39 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0ADF1F2968654E00672612 /* RegisterController.swift */,
+				CE0ADF202968654E00672612 /* RegisterController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE196D81296706FA00E14B39 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE196D852967071A00E14B39 /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE196D822967070000E14B39 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE196D832967070C00E14B39 /* RegisterViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1BC1DE2984D63F0048D7A3 /* My Task */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AD82A2DD20000A452F1 /* MyTask */,
+			);
+			path = "My Task";
+			sourceTree = "<group>";
+		};
+		CE1BC1DF2984D6460048D7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01902A1C72C20064D18B /* Cells */,
+				CE1BC1EA2984D6BB0048D7A3 /* MyTaskController.swift */,
+				CE1BC1EB2984D6BB0048D7A3 /* MyTaskController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1BC1E02984D64A0048D7A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01972A1C79130064D18B /* MyTaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1BC1E12984D6590048D7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01952A1C76500064D18B /* TaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE1BC1E22984D66B0048D7A3 /* My Team */ = {
+			isa = PBXGroup;
+			children = (
+				CED774732A14DE8D0047661A /* Project */,
+				CED774632A0F6A000047661A /* TeamInviteMember */,
+				CED774492A0CDBE40047661A /* TeamMember */,
+				CE727ADD2A04DA2700D5373A /* MyTeam */,
+			);
+			path = "My Team";
+			sourceTree = "<group>";
+		};
+		CE1BC1E32984D6710048D7A3 /* My Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CE727ABB29FCF20400D5373A /* ManageAccount */,
+				CE0EFBB629F3C45900819C57 /* ProfileTeam */,
+				CE0EFBAE29F25B9E00819C57 /* EditProfile */,
+				CE0EFBAD29F25B9300819C57 /* MyProfile */,
+			);
+			path = "My Profile";
+			sourceTree = "<group>";
+		};
+		CE1BC1E42984D67A0048D7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE727AE42A08B9AA00D5373A /* ProjectModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE1BC1E52984D67E0048D7A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE727ADE2A04E04800D5373A /* MyTeamViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1BC1E62984D6840048D7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC1EE2984D6CA0048D7A3 /* MyTeamController.swift */,
+				CE1BC1EF2984D6CA0048D7A3 /* MyTeamController.xib */,
+				CE727AE02A08B66A00D5373A /* ProjectCell.swift */,
+				CE727AE12A08B66A00D5373A /* ProjectCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1BC1E72984D6980048D7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBAF29F2724700819C57 /* Cell */,
+				CE1BC1F82984D7010048D7A3 /* MyProfileController.swift */,
+				CE1BC1F92984D7010048D7A3 /* MyProfileController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1BC1E82984D69C0048D7A3 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBA729EE686600819C57 /* MyProfileViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		CE1BC1E92984D6A20048D7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE0EFBB429F2B42200819C57 /* MyProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE1BC1FF298633410048D7A3 /* Forget Password */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC2022986336A0048D7A3 /* Model */,
+				CE1BC201298633660048D7A3 /* ViewModel */,
+				CE1BC2002986335D0048D7A3 /* View */,
+			);
+			path = "Forget Password";
+			sourceTree = "<group>";
+		};
+		CE1BC2002986335D0048D7A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC2032986337C0048D7A3 /* ForgetPasswordController.swift */,
+				CE1BC2042986337C0048D7A3 /* ForgetPasswordController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE1BC201298633660048D7A3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC207298669F30048D7A3 /* ForgetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE1BC2022986336A0048D7A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE33344B2A31B303008FF0FD /* Subtask */ = {
+			isa = PBXGroup;
+			children = (
+				CE33344C2A31B335008FF0FD /* CreateSubtask */,
+			);
+			path = Subtask;
+			sourceTree = "<group>";
+		};
+		CE33344C2A31B335008FF0FD /* CreateSubtask */ = {
+			isa = PBXGroup;
+			children = (
+				CE33344F2A31B354008FF0FD /* Model */,
+				CE33344E2A31B350008FF0FD /* ViewModel */,
+				CE33344D2A31B34A008FF0FD /* View */,
+			);
+			path = CreateSubtask;
+			sourceTree = "<group>";
+		};
+		CE33344D2A31B34A008FF0FD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3334502A31B3EA008FF0FD /* CreateSubtaskController.swift */,
+				CE3334512A31B3EA008FF0FD /* CreateSubtaskController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE33344E2A31B350008FF0FD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE3334542A31B3F9008FF0FD /* CreateSubtaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE33344F2A31B354008FF0FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE3334562A31B405008FF0FD /* CreateSubtaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE36892829DAFD5300BF46CD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE36892A29DB01CE00BF46CD /* ConfirmForgetPasswordController.xib */,
+				CE36892929DB01CE00BF46CD /* ConfirmForgetPasswordController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE36892D29E6D54900BF46CD /* ConfirmForgetPassword */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E92D129EA463B00DBF49E /* Model */,
+				CE5E92CC29E97BD300DBF49E /* ViewModel */,
+				CE36892829DAFD5300BF46CD /* View */,
+			);
+			path = ConfirmForgetPassword;
+			sourceTree = "<group>";
+		};
+		CE5E92CC29E97BD300DBF49E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE5E92CD29E97C5900DBF49E /* ConfirmForgetPasswordViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE5E92D129EA463B00DBF49E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE714ACB2A2DA02D00A452F1 /* ProjectTask */ = {
+			isa = PBXGroup;
+			children = (
+				CECF019D2A1C82D70064D18B /* Model */,
+				CECF019C2A1C82D20064D18B /* ViewModel */,
+				CECF01992A1C82BD0064D18B /* View */,
+			);
+			path = ProjectTask;
+			sourceTree = "<group>";
+		};
+		CE714ACC2A2DA03300A452F1 /* CreateTask */ = {
+			isa = PBXGroup;
+			children = (
+				CE714ACF2A2DA04900A452F1 /* Model */,
+				CE714ACE2A2DA04500A452F1 /* ViewModel */,
+				CE714ACD2A2DA04100A452F1 /* View */,
+			);
+			path = CreateTask;
+			sourceTree = "<group>";
+		};
+		CE714ACD2A2DA04100A452F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AD02A2DA05900A452F1 /* CreateTaskController.swift */,
+				CE714AD12A2DA05900A452F1 /* CreateTaskController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE714ACE2A2DA04500A452F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AD42A2DA06100A452F1 /* CreateTaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE714ACF2A2DA04900A452F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AD62A2DA07100A452F1 /* CreateTaskModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE714AD82A2DD20000A452F1 /* MyTask */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC1E12984D6590048D7A3 /* Model */,
+				CE1BC1E02984D64A0048D7A3 /* ViewModel */,
+				CE1BC1DF2984D6460048D7A3 /* View */,
+			);
+			path = MyTask;
+			sourceTree = "<group>";
+		};
+		CE714AD92A2DD20900A452F1 /* DetailTask */ = {
+			isa = PBXGroup;
+			children = (
+				CE714ADD2A2DD22300A452F1 /* Model */,
+				CE714ADC2A2DD21F00A452F1 /* ViewModel */,
+				CE714ADB2A2DD21800A452F1 /* View */,
+			);
+			path = DetailTask;
+			sourceTree = "<group>";
+		};
+		CE714ADB2A2DD21800A452F1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AE92A2E37F200A452F1 /* Cell */,
+				CE714AE12A2DD24300A452F1 /* DetailTaskController.swift */,
+				CE714AE22A2DD24300A452F1 /* DetailTaskController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE714ADC2A2DD21F00A452F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AE52A2DF33100A452F1 /* DetailTaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE714ADD2A2DD22300A452F1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AE72A2E367B00A452F1 /* CommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE714AE92A2E37F200A452F1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AEF2A2E51E400A452F1 /* SubtaskCell */,
+				CE714AEA2A2E37F600A452F1 /* CommentCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE714AEA2A2E37F600A452F1 /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AEB2A2E380E00A452F1 /* CommentCell.swift */,
+				CE714AEC2A2E380E00A452F1 /* CommentCell.xib */,
+			);
+			path = CommentCell;
+			sourceTree = "<group>";
+		};
+		CE714AEF2A2E51E400A452F1 /* SubtaskCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AF02A2E51F200A452F1 /* SubtaskCell.swift */,
+				CE714AF12A2E51F200A452F1 /* SubtaskCell.xib */,
+			);
+			path = SubtaskCell;
+			sourceTree = "<group>";
+		};
+		CE714AF52A31A31200A452F1 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				CE714AD92A2DD20900A452F1 /* DetailTask */,
+				CE714ACC2A2DA03300A452F1 /* CreateTask */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		CE727ABB29FCF20400D5373A /* ManageAccount */ = {
+			isa = PBXGroup;
+			children = (
+				CE727ABE29FCF21400D5373A /* Model */,
+				CE727ABD29FCF20F00D5373A /* ViewModel */,
+				CE727ABC29FCF20B00D5373A /* View */,
+			);
+			path = ManageAccount;
+			sourceTree = "<group>";
+		};
+		CE727ABC29FCF20B00D5373A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE727ABF29FCF22900D5373A /* ManageAccountController.swift */,
+				CE727AC029FCF22900D5373A /* ManageAccountController.xib */,
+				CE727AC329FE660200D5373A /* ChangePasswordController.swift */,
+				CE727AC429FE660200D5373A /* ChangePasswordController.xib */,
+				CE727ACD2A00D73700D5373A /* ChangeEmailController.swift */,
+				CE727ACE2A00D73700D5373A /* ChangeEmailController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE727ABD29FCF20F00D5373A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE727AC729FE6B3D00D5373A /* ManageAccountViewModel.swift */,
+				CE727AC92A00C02200D5373A /* ChangePasswordViewModel.swift */,
+				CE727ACB2A00D6EA00D5373A /* ChangeEmailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE727ABE29FCF21400D5373A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE727ADD2A04DA2700D5373A /* MyTeam */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC1E42984D67A0048D7A3 /* Model */,
+				CE1BC1E52984D67E0048D7A3 /* ViewModel */,
+				CE1BC1E62984D6840048D7A3 /* View */,
+			);
+			path = MyTeam;
+			sourceTree = "<group>";
+		};
+		CE7BFCFE294DE0D90049B3CD = {
+			isa = PBXGroup;
+			children = (
+				CE0ADF34296AF75D00672612 /* Assets.xcassets */,
+				CE7BFD09294DE0D90049B3CD /* ProMag */,
+				CE7BFD08294DE0D90049B3CD /* Products */,
+				30C24CF325F648C018F4B570 /* Pods */,
+				5882BE18FC9BEDC61B8C48B8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CE7BFD08294DE0D90049B3CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE7BFD07294DE0D90049B3CD /* ProMag.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE7BFD09294DE0D90049B3CD /* ProMag */ = {
+			isa = PBXGroup;
+			children = (
+				CE840213294E2B97007E6357 /* Extension */,
+				CEFAD0E7294DE9C900B0F718 /* Module */,
+				CE7BFD0A294DE0D90049B3CD /* AppDelegate.swift */,
+				CE7BFD16294DE0DA0049B3CD /* Assets.xcassets */,
+				CE7BFD18294DE0DA0049B3CD /* LaunchScreen.storyboard */,
+				CE7BFD1B294DE0DA0049B3CD /* Info.plist */,
+				CE7BFD13294DE0D90049B3CD /* ProMag.xcdatamodeld */,
+			);
+			path = ProMag;
+			sourceTree = "<group>";
+		};
+		CE840213294E2B97007E6357 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CE840214294E2BD0007E6357 /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CECF01902A1C72C20064D18B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01912A1C72D30064D18B /* TaskCell.swift */,
+				CECF01922A1C72D30064D18B /* TaskCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CECF01992A1C82BD0064D18B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED774B42A19FE990047661A /* ProjectTaskController.swift */,
+				CED774B52A19FE990047661A /* ProjectTaskController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECF019A2A1C82CA0064D18B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01A22A1C83080064D18B /* ProjectMemberController.swift */,
+				CECF01A32A1C83080064D18B /* ProjectMemberController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECF019B2A1C82CE0064D18B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01A82A1CBE280064D18B /* ProjectDashboardController.swift */,
+				CECF01A92A1CBE280064D18B /* ProjectDashboardController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CECF019C2A1C82D20064D18B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01B22A22084B0064D18B /* ProjectTaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CECF019D2A1C82D70064D18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CECF019E2A1C82DA0064D18B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01B02A1CD5B60064D18B /* ProjectMemberViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CECF019F2A1C82DF0064D18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CECF01A02A1C82E20064D18B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01AC2A1CBE3F0064D18B /* ProjectDashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CECF01A12A1C82E90064D18B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01AE2A1CC2220064D18B /* DashboardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED774492A0CDBE40047661A /* TeamMember */ = {
+			isa = PBXGroup;
+			children = (
+				CED7744C2A0CDBFD0047661A /* Model */,
+				CED7744B2A0CDBF80047661A /* ViewModel */,
+				CED7744A2A0CDBF30047661A /* View */,
+			);
+			path = TeamMember;
+			sourceTree = "<group>";
+		};
+		CED7744A2A0CDBF30047661A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED7744D2A0CDC0F0047661A /* TeamMemberController.swift */,
+				CED7744E2A0CDC0F0047661A /* TeamMemberController.xib */,
+				CED774512A0CDC240047661A /* TeamMemberCell.swift */,
+				CED774522A0CDC240047661A /* TeamMemberCell.xib */,
+				CED7745B2A0E2E280047661A /* MemberDetailController.swift */,
+				CED7745C2A0E2E280047661A /* MemberDetailController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED7744B2A0CDBF80047661A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED774572A0CE3540047661A /* TeamMemberViewModel.swift */,
+				CED7745F2A0E34CD0047661A /* MemberDetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED7744C2A0CDBFD0047661A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED774552A0CE2770047661A /* TeamMemberModel.swift */,
+				CED774612A0F4F640047661A /* RolesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED774632A0F6A000047661A /* TeamInviteMember */ = {
+			isa = PBXGroup;
+			children = (
+				CED7747E2A18D4BF0047661A /* SelectTeamMember */,
+				CED7746A2A0F6A270047661A /* Model */,
+				CED774692A0F6A230047661A /* ViewModel */,
+				CED774682A0F6A1A0047661A /* View */,
+			);
+			path = TeamInviteMember;
+			sourceTree = "<group>";
+		};
+		CED774682A0F6A1A0047661A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED774642A0F6A170047661A /* TeamInviteController.swift */,
+				CED774652A0F6A170047661A /* TeamInviteController.xib */,
+				CED7746F2A1203150047661A /* TeamInviteCell.swift */,
+				CED774702A1203150047661A /* TeamInviteCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED774692A0F6A230047661A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED7746B2A0F784E0047661A /* TeamInviteViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED7746A2A0F6A270047661A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED7746D2A11FBB10047661A /* TeamInviteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED774732A14DE8D0047661A /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				CED774B02A19FE5D0047661A /* DetailProject */,
+				CED774742A14E63C0047661A /* CreateProject */,
+			);
+			path = Project;
+			sourceTree = "<group>";
+		};
+		CED774742A14E63C0047661A /* CreateProject */ = {
+			isa = PBXGroup;
+			children = (
+				CED7747B2A18C11E0047661A /* Model */,
+				CED7747A2A18C1190047661A /* ViewModel */,
+				CED774752A14E64A0047661A /* View */,
+			);
+			path = CreateProject;
+			sourceTree = "<group>";
+		};
+		CED774752A14E64A0047661A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED774762A14E6610047661A /* CreateProjectController.swift */,
+				CED774772A14E6610047661A /* CreateProjectController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED7747A2A18C1190047661A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED7747C2A18C1A60047661A /* CreateProjectViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED7747B2A18C11E0047661A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED7747E2A18D4BF0047661A /* SelectTeamMember */ = {
+			isa = PBXGroup;
+			children = (
+				CED774862A18D6470047661A /* Model */,
+				CED774892A18D9420047661A /* ViewModel */,
+				CED7747F2A18D4CC0047661A /* View */,
+			);
+			path = SelectTeamMember;
+			sourceTree = "<group>";
+		};
+		CED7747F2A18D4CC0047661A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CED7748C2A18DB520047661A /* Cell */,
+				CED774822A18D4FC0047661A /* SelectTeamController.swift */,
+				CED774832A18D4FC0047661A /* SelectTeamController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CED774862A18D6470047661A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CED774872A18D6540047661A /* SelectTeamModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CED774892A18D9420047661A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CED7748A2A18D9510047661A /* SelectTeamViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CED7748C2A18DB520047661A /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CED7748D2A18DB810047661A /* SingleSelectTeamCell.swift */,
+				CED7748E2A18DB810047661A /* SingleSelectTeamCell.xib */,
+				CED774912A18DCA10047661A /* MultipleSelectTeamCell.swift */,
+				CED774922A18DCA10047661A /* MultipleSelectTeamCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CED774B02A19FE5D0047661A /* DetailProject */ = {
+			isa = PBXGroup;
+			children = (
+				CED774B32A19FE860047661A /* ProjectDashboard */,
+				CED774B22A19FE750047661A /* ProjectMember */,
+				CED774B12A19FE6A0047661A /* ProjectTask */,
+				CECF018E2A1BC3190064D18B /* DetailProjectNavigationController.swift */,
+			);
+			path = DetailProject;
+			sourceTree = "<group>";
+		};
+		CED774B12A19FE6A0047661A /* ProjectTask */ = {
+			isa = PBXGroup;
+			children = (
+				CE33344B2A31B303008FF0FD /* Subtask */,
+				CE714AF52A31A31200A452F1 /* Task */,
+				CE714ACB2A2DA02D00A452F1 /* ProjectTask */,
+			);
+			path = ProjectTask;
+			sourceTree = "<group>";
+		};
+		CED774B22A19FE750047661A /* ProjectMember */ = {
+			isa = PBXGroup;
+			children = (
+				CECF019F2A1C82DF0064D18B /* Model */,
+				CECF019E2A1C82DA0064D18B /* ViewModel */,
+				CECF019A2A1C82CA0064D18B /* View */,
+			);
+			path = ProjectMember;
+			sourceTree = "<group>";
+		};
+		CED774B32A19FE860047661A /* ProjectDashboard */ = {
+			isa = PBXGroup;
+			children = (
+				CECF01A12A1C82E90064D18B /* Model */,
+				CECF01A02A1C82E20064D18B /* ViewModel */,
+				CECF019B2A1C82CE0064D18B /* View */,
+			);
+			path = ProjectDashboard;
+			sourceTree = "<group>";
+		};
+		CEFAD0E7294DE9C900B0F718 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				CE1BC1FD2984D71A0048D7A3 /* MainController.swift */,
+				CE1BC1E32984D6710048D7A3 /* My Profile */,
+				CE1BC1E22984D66B0048D7A3 /* My Team */,
+				CE1BC1DE2984D63F0048D7A3 /* My Task */,
+				CE196D742966CD0A00E14B39 /* Register */,
+				CE196D6E2965C63C00E14B39 /* Login */,
+				CE36892D29E6D54900BF46CD /* ConfirmForgetPassword */,
+				CE1BC1FF298633410048D7A3 /* Forget Password */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE7BFD06294DE0D90049B3CD /* ProMag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE7BFD1E294DE0DA0049B3CD /* Build configuration list for PBXNativeTarget "ProMag" */;
+			buildPhases = (
+				35542A051EEDB74905D3AB68 /* [CP] Check Pods Manifest.lock */,
+				CE7BFD03294DE0D90049B3CD /* Sources */,
+				CE7BFD04294DE0D90049B3CD /* Frameworks */,
+				CE7BFD05294DE0D90049B3CD /* Resources */,
+				CE84FED1294DF094007E6357 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProMag;
+			productName = ProMag;
+			productReference = CE7BFD07294DE0D90049B3CD /* ProMag.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE7BFCFF294DE0D90049B3CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					CE7BFD06294DE0D90049B3CD = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = CE7BFD02294DE0D90049B3CD /* Build configuration list for PBXProject "ProMag" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE7BFCFE294DE0D90049B3CD;
+			productRefGroup = CE7BFD08294DE0D90049B3CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE7BFD06294DE0D90049B3CD /* ProMag */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE7BFD05294DE0D90049B3CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0EFBC829FA8BB700819C57 /* EditProfileController.xib in Resources */,
+				CE1BC1F12984D6CA0048D7A3 /* MyTeamController.xib in Resources */,
+				CE727AC229FCF22900D5373A /* ManageAccountController.xib in Resources */,
+				CE1BC2062986337C0048D7A3 /* ForgetPasswordController.xib in Resources */,
+				CE0EFBB329F2738000819C57 /* TeamListCell.xib in Resources */,
+				CED774B72A19FE990047661A /* ProjectTaskController.xib in Resources */,
+				CED774902A18DB810047661A /* SingleSelectTeamCell.xib in Resources */,
+				CED774792A14E6610047661A /* CreateProjectController.xib in Resources */,
+				CECF01AB2A1CBE280064D18B /* ProjectDashboardController.xib in Resources */,
+				CE714AF32A2E51F200A452F1 /* SubtaskCell.xib in Resources */,
+				CE7BFD1A294DE0DA0049B3CD /* LaunchScreen.storyboard in Resources */,
+				CE0ADF222968654E00672612 /* RegisterController.xib in Resources */,
+				CED774722A1203150047661A /* TeamInviteCell.xib in Resources */,
+				CE727AE32A08B66A00D5373A /* ProjectCell.xib in Resources */,
+				CECF01A52A1C83080064D18B /* ProjectMemberController.xib in Resources */,
+				CE36892C29DB01CE00BF46CD /* ConfirmForgetPasswordController.xib in Resources */,
+				CE1BC1FB2984D7010048D7A3 /* MyProfileController.xib in Resources */,
+				CE714AD32A2DA05900A452F1 /* CreateTaskController.xib in Resources */,
+				CED774852A18D4FC0047661A /* SelectTeamController.xib in Resources */,
+				CE196D732965C69C00E14B39 /* LoginController.xib in Resources */,
+				CE714AE42A2DD24300A452F1 /* DetailTaskController.xib in Resources */,
+				CECF01942A1C72D30064D18B /* TaskCell.xib in Resources */,
+				CE0EFBBD29F3C48200819C57 /* ProfileTeamController.xib in Resources */,
+				CE0ADF35296AF75D00672612 /* Assets.xcassets in Resources */,
+				CE727AD02A00D73700D5373A /* ChangeEmailController.xib in Resources */,
+				CED774542A0CDC240047661A /* TeamMemberCell.xib in Resources */,
+				CE3334532A31B3EA008FF0FD /* CreateSubtaskController.xib in Resources */,
+				CE1BC1ED2984D6BB0048D7A3 /* MyTaskController.xib in Resources */,
+				CE727AC629FE660200D5373A /* ChangePasswordController.xib in Resources */,
+				CED774502A0CDC0F0047661A /* TeamMemberController.xib in Resources */,
+				CED774942A18DCA10047661A /* MultipleSelectTeamCell.xib in Resources */,
+				CED7745E2A0E2E280047661A /* MemberDetailController.xib in Resources */,
+				CE714AEE2A2E380E00A452F1 /* CommentCell.xib in Resources */,
+				CED774672A0F6A170047661A /* TeamInviteController.xib in Resources */,
+				CE7BFD17294DE0DA0049B3CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		35542A051EEDB74905D3AB68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ProMag-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE7BFD03294DE0D90049B3CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE0EFBCA29FA9EFD00819C57 /* EditProfileViewModel.swift in Sources */,
+				CE3334522A31B3EA008FF0FD /* CreateSubtaskController.swift in Sources */,
+				CE0EFBBC29F3C48200819C57 /* ProfileTeamController.swift in Sources */,
+				CECF01AA2A1CBE280064D18B /* ProjectDashboardController.swift in Sources */,
+				CE714AF22A2E51F200A452F1 /* SubtaskCell.swift in Sources */,
+				CED7748B2A18D9510047661A /* SelectTeamViewModel.swift in Sources */,
+				CE1BC1FA2984D7010048D7A3 /* MyProfileController.swift in Sources */,
+				CECF01B32A22084C0064D18B /* ProjectTaskViewModel.swift in Sources */,
+				CE7BFD15294DE0D90049B3CD /* ProMag.xcdatamodeld in Sources */,
+				CED774932A18DCA10047661A /* MultipleSelectTeamCell.swift in Sources */,
+				CED774532A0CDC240047661A /* TeamMemberCell.swift in Sources */,
+				CED7747D2A18C1A60047661A /* CreateProjectViewModel.swift in Sources */,
+				CED774712A1203150047661A /* TeamInviteCell.swift in Sources */,
+				CED7744F2A0CDC0F0047661A /* TeamMemberController.swift in Sources */,
+				CE714AE62A2DF33100A452F1 /* DetailTaskViewModel.swift in Sources */,
+				CE727AC829FE6B3D00D5373A /* ManageAccountViewModel.swift in Sources */,
+				CE196D722965C69C00E14B39 /* LoginController.swift in Sources */,
+				CED774B62A19FE990047661A /* ProjectTaskController.swift in Sources */,
+				CED7746C2A0F784E0047661A /* TeamInviteViewModel.swift in Sources */,
+				CE0EFBC129F5276400819C57 /* ProfileTeamModel.swift in Sources */,
+				CECF01B12A1CD5B60064D18B /* ProjectMemberViewModel.swift in Sources */,
+				CE5E92CE29E97C5900DBF49E /* ConfirmForgetPasswordViewModel.swift in Sources */,
+				CECF01A42A1C83080064D18B /* ProjectMemberController.swift in Sources */,
+				CE727ACF2A00D73700D5373A /* ChangeEmailController.swift in Sources */,
+				CE714AD22A2DA05900A452F1 /* CreateTaskController.swift in Sources */,
+				CE727ADF2A04E04800D5373A /* MyTeamViewModel.swift in Sources */,
+				CED7746E2A11FBB10047661A /* TeamInviteModel.swift in Sources */,
+				CE0EFBB529F2B42200819C57 /* MyProfileModel.swift in Sources */,
+				CE1BC1EC2984D6BB0048D7A3 /* MyTaskController.swift in Sources */,
+				CECF01982A1C79130064D18B /* MyTaskViewModel.swift in Sources */,
+				CE0EFBA829EE686600819C57 /* MyProfileViewModel.swift in Sources */,
+				CE1BC1FE2984D71A0048D7A3 /* MainController.swift in Sources */,
+				CE714AD72A2DA07100A452F1 /* CreateTaskModel.swift in Sources */,
+				CE0EFBC729FA8BB700819C57 /* EditProfileController.swift in Sources */,
+				CED774662A0F6A170047661A /* TeamInviteController.swift in Sources */,
+				CECF018F2A1BC3190064D18B /* DetailProjectNavigationController.swift in Sources */,
+				CED774602A0E34CD0047661A /* MemberDetailViewModel.swift in Sources */,
+				CE0ADF3A296AFAEC00672612 /* LoginViewModel.swift in Sources */,
+				CECF01AD2A1CBE3F0064D18B /* ProjectDashboardViewModel.swift in Sources */,
+				CED774882A18D6540047661A /* SelectTeamModel.swift in Sources */,
+				CED774782A14E6610047661A /* CreateProjectController.swift in Sources */,
+				CE3334572A31B405008FF0FD /* CreateSubtaskModel.swift in Sources */,
+				CE1BC1F02984D6CA0048D7A3 /* MyTeamController.swift in Sources */,
+				CE727AC529FE660200D5373A /* ChangePasswordController.swift in Sources */,
+				CE714AD52A2DA06100A452F1 /* CreateTaskViewModel.swift in Sources */,
+				CE727ACC2A00D6EA00D5373A /* ChangeEmailViewModel.swift in Sources */,
+				CED7748F2A18DB810047661A /* SingleSelectTeamCell.swift in Sources */,
+				CECF01932A1C72D30064D18B /* TaskCell.swift in Sources */,
+				CE7BFD0B294DE0D90049B3CD /* AppDelegate.swift in Sources */,
+				CECF01AF2A1CC2220064D18B /* DashboardModel.swift in Sources */,
+				CE196D862967071A00E14B39 /* RegisterModel.swift in Sources */,
+				CECF01962A1C76500064D18B /* TaskModel.swift in Sources */,
+				CE727AE52A08B9AA00D5373A /* ProjectModel.swift in Sources */,
+				CE714AE32A2DD24300A452F1 /* DetailTaskController.swift in Sources */,
+				CED774562A0CE2770047661A /* TeamMemberModel.swift in Sources */,
+				CED774582A0CE3540047661A /* TeamMemberViewModel.swift in Sources */,
+				CE0EFBBF29F4DD2D00819C57 /* ProfileTeamViewModel.swift in Sources */,
+				CE840215294E2BD0007E6357 /* UIViewController+Extension.swift in Sources */,
+				CE0EFBB229F2738000819C57 /* TeamListCell.swift in Sources */,
+				CE727AE22A08B66A00D5373A /* ProjectCell.swift in Sources */,
+				CE1BC208298669F30048D7A3 /* ForgetPasswordViewModel.swift in Sources */,
+				CE3334552A31B3F9008FF0FD /* CreateSubtaskViewModel.swift in Sources */,
+				CE36892B29DB01CE00BF46CD /* ConfirmForgetPasswordController.swift in Sources */,
+				CE714AED2A2E380E00A452F1 /* CommentCell.swift in Sources */,
+				CED774622A0F4F640047661A /* RolesModel.swift in Sources */,
+				CE196D842967070C00E14B39 /* RegisterViewModel.swift in Sources */,
+				CE714AE82A2E367B00A452F1 /* CommentModel.swift in Sources */,
+				CE0ADF212968654E00672612 /* RegisterController.swift in Sources */,
+				CED774842A18D4FC0047661A /* SelectTeamController.swift in Sources */,
+				CED7745D2A0E2E280047661A /* MemberDetailController.swift in Sources */,
+				CE727ACA2A00C02200D5373A /* ChangePasswordViewModel.swift in Sources */,
+				CE727AC129FCF22900D5373A /* ManageAccountController.swift in Sources */,
+				CE1BC2052986337C0048D7A3 /* ForgetPasswordController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE7BFD18294DE0DA0049B3CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE7BFD19294DE0DA0049B3CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE7BFD1C294DE0DA0049B3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE7BFD1D294DE0DA0049B3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE7BFD1F294DE0DA0049B3CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B12A6183EDE7B65DD94A087F /* Pods-ProMag.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKA562K63N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProMag/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrata.promag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CE7BFD20294DE0DA0049B3CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3EEC9F3C3D52EAF5AA33BA0 /* Pods-ProMag.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DKA562K63N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ProMag/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.chrata.promag;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE7BFD02294DE0D90049B3CD /* Build configuration list for PBXProject "ProMag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7BFD1C294DE0DA0049B3CD /* Debug */,
+				CE7BFD1D294DE0DA0049B3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE7BFD1E294DE0DA0049B3CD /* Build configuration list for PBXNativeTarget "ProMag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE7BFD1F294DE0DA0049B3CD /* Debug */,
+				CE7BFD20294DE0DA0049B3CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CE7BFD13294DE0D90049B3CD /* ProMag.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CE7BFD14294DE0D90049B3CD /* ProMag.xcdatamodel */,
+			);
+			currentVersion = CE7BFD14294DE0D90049B3CD /* ProMag.xcdatamodel */;
+			path = ProMag.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CE7BFCFF294DE0D90049B3CD /* Project object */;
+}

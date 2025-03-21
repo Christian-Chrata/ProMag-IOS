@@ -1,0 +1,70 @@
+{
+    "statuscode": 200,
+    "message": "Tasks found!",
+    "data": {
+        "project_data": {
+            "project_id": "3",
+            "project_name": "Project ke 2"
+        },
+        "user_data": {
+            "role_id": "3",
+            "role_name": "Project Manager"
+        },
+        "tasks": [
+            {
+                "task_id": "1",
+                "user_fullname": "Christian Testing",
+                "task_name": "Task kedua projectId 3",
+                "task_desc": "Deskripsi task kedua projectId 3",
+                "status": "Due",
+                "task_startdate": "2023-01-01 00:00:00",
+                "task_enddate": "2023-01-05 00:00:00"
+            },
+            {
+                "task_id": "3",
+                "user_fullname": "Gazic Aditya Totti",
+                "task_name": "Task kedua projectId 5",
+                "task_desc": "Deskripsi task kedua projectId 3",
+                "status": "Finished",
+                "task_startdate": "2023-01-01 00:00:00",
+                "task_enddate": "2023-01-05 00:00:00"
+            },
+            {
+                "task_id": "8",
+                "user_fullname": null,
+                "task_name": "task delete iniiii",
+                "task_desc": "ini descri",
+                "status": "Finished",
+                "task_startdate": "2023-06-06 00:00:00",
+                "task_enddate": "2024-06-06 00:00:00"
+            },
+            {
+                "task_id": "9",
+                "user_fullname": null,
+                "task_name": "BARU NIHHH",
+                "task_desc": "DESKRIPSINYA INI",
+                "status": "On Progress",
+                "task_startdate": "2023-06-08 00:00:00",
+                "task_enddate": "2026-06-06 00:00:00"
+            },
+            {
+                "task_id": "10",
+                "user_fullname": "developing testing",
+                "task_name": "INI BARU",
+                "task_desc": "askdmkasd",
+                "status": "Due",
+                "task_startdate": "2023-06-08 00:00:00",
+                "task_enddate": "2020-06-08 00:00:00"
+            },
+            {
+                "task_id": "11",
+                "user_fullname": "developing testing",
+                "task_name": "task yang udah kelewat",
+                "task_desc": "aksdnkasdn",
+                "status": "Due",
+                "task_startdate": "2023-06-08 00:00:00",
+                "task_enddate": "2022-04-05 00:00:00"
+            }
+        ]
+    }
+}

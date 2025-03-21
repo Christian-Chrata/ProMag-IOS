@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditProfileController" customModule="ProMag" customModuleProvider="target">
+            <connections>
+                <outlet property="fName" destination="hiZ-Xd-lXW" id="Dsd-Ky-qAa"/>
+                <outlet property="lName" destination="SSa-bi-a7t" id="3yJ-L6-7b9"/>
+                <outlet property="pNumber" destination="5kz-6g-3qQ" id="jvf-2P-nQJ"/>
+                <outlet property="scrollView" destination="tXA-hl-lRd" id="1YR-sB-NUF"/>
+                <outlet property="submitButton" destination="eRs-yk-5Ms" id="SrB-NB-xce"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="tXA-hl-lRd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="45d-82-5k7">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="aKY-Ac-IgG">
+                                    <rect key="frame" x="24" y="16" width="272" height="182"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="IRf-eh-ku2">
+                                            <rect key="frame" x="0.0" y="0.0" width="272" height="182"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="r6f-e6-57i">
+                                                    <rect key="frame" x="0.0" y="0.0" width="272" height="182"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hiZ-Xd-lXW" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="0.0" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="BTI-Om-KG1"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSa-bi-a7t" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="66" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Vfc-lL-YIL"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5kz-6g-3qQ" customClass="TextField" customModule="Common">
+                                                            <rect key="frame" x="0.0" y="132" width="272" height="50"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1Qe-Yq-oBk"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRs-yk-5Ms" customClass="Button" customModule="Common">
+                                    <rect key="frame" x="16" y="502" width="288" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="ilG-Bf-u8I"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="SUBMIT"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="round">
+                                            <real key="value" value="8"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="type">
+                                            <integer key="value" value="0"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="aKY-Ac-IgG" secondAttribute="trailing" constant="24" id="5eM-j8-tX7"/>
+                                <constraint firstAttribute="trailing" secondItem="eRs-yk-5Ms" secondAttribute="trailing" constant="16" id="Ewy-g8-O20"/>
+                                <constraint firstAttribute="bottom" secondItem="eRs-yk-5Ms" secondAttribute="bottom" constant="16" id="b1s-m1-2Uy"/>
+                                <constraint firstItem="eRs-yk-5Ms" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aKY-Ac-IgG" secondAttribute="bottom" constant="40" id="cEk-H0-vKm"/>
+                                <constraint firstItem="eRs-yk-5Ms" firstAttribute="leading" secondItem="45d-82-5k7" secondAttribute="leading" constant="16" id="r1S-TD-1ZR"/>
+                                <constraint firstItem="aKY-Ac-IgG" firstAttribute="top" secondItem="45d-82-5k7" secondAttribute="top" constant="16" id="s7M-UB-7tS"/>
+                                <constraint firstItem="aKY-Ac-IgG" firstAttribute="leading" secondItem="45d-82-5k7" secondAttribute="leading" constant="24" id="vNa-pI-QKd"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="45d-82-5k7" secondAttribute="trailing" id="7FL-52-Gzc"/>
+                        <constraint firstItem="45d-82-5k7" firstAttribute="width" secondItem="tXA-hl-lRd" secondAttribute="width" id="DRq-P6-IYf"/>
+                        <constraint firstItem="45d-82-5k7" firstAttribute="leading" secondItem="tXA-hl-lRd" secondAttribute="leading" id="GoP-j8-MWB"/>
+                        <constraint firstItem="45d-82-5k7" firstAttribute="top" secondItem="tXA-hl-lRd" secondAttribute="top" id="UrG-QR-e93"/>
+                        <constraint firstAttribute="bottom" secondItem="45d-82-5k7" secondAttribute="bottom" id="a9b-cY-FE3"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tXA-hl-lRd" secondAttribute="bottom" id="4Zr-rc-b4s"/>
+                <constraint firstItem="tXA-hl-lRd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="915-hI-zb1"/>
+                <constraint firstItem="45d-82-5k7" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="dzy-TM-XKz"/>
+                <constraint firstItem="tXA-hl-lRd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="h93-ly-tkQ"/>
+                <constraint firstAttribute="trailing" secondItem="tXA-hl-lRd" secondAttribute="trailing" id="zwU-Ae-9rH"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="20"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="eRs-yk-5Ms">
+            <size key="intrinsicContentSize" width="56" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

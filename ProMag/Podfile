@@ -1,0 +1,30 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+use_frameworks!
+
+workspace 'ProMag'
+
+def main
+end
+
+target 'ProMag' do
+  project 'ProMag.xcodeproj'
+  
+  main
+end
+
+target 'Networking' do
+  project 'Networking/Networking.xcodeproj'
+  
+end
+
+target 'AuthManager' do
+  project 'AuthManager/AuthManager.xcodeproj'
+  
+end
+
+target 'Common' do
+  project 'Common/Common.xcodeproj'
+  
+  main
+end
